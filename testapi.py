@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from mangum import Mangum
 
 app = FastAPI()
-handler = Mangum(app)
+
 
 class Text(BaseModel):
     text : str
